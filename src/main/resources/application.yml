@@ -1,0 +1,23 @@
+server:
+  port: 9010
+
+spring:
+  application:
+    name: resource-server
+  servlet:
+    multipart:
+      #请求的总文件大小
+      maxRequestSize: 1024MB
+      #单个文件大小
+      maxFileSize: 500MB
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:12345/eureka/
+
+upload:
+  file:
+    path:
+      win: E:/resourceServer
+      #todo setting
+      linux: /usr/local/resourceServer
